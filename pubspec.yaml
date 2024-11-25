@@ -1,0 +1,39 @@
+name: milana_app
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Иконки для iOS
+  cupertino_icons: ^1.0.8
+
+  # HTTP-библиотека для отправки запросов
+  http: ^1.0.0
+
+  # Google API для работы с аутентификацией
+  googleapis_auth: ^1.6.0
+
+  # Google Sign-In для аутентификации пользователя
+  google_sign_in: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Линтеры для улучшения качества кода
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Указание на использование JSON-файла учетных данных
+  assets:
+    - android/app/credentials.json
